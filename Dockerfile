@@ -1,6 +1,7 @@
 FROM alpine:latest
 
-RUN apk add --no-cache lighttpd
+RUN apk add --no-cache lighttpd && \
+    echo -e 'server.modules += ("mod_ssi")\nssi.extension = (".html")\n' >> /etc/lighttpd/lighttpd.conf
 EXPOSE 80
 CMD [ "/usr/sbin/lighttpd",  "-Df",  "/etc/lighttpd/lighttpd.conf" ]
 
