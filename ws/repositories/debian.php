@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . "/includes/layout.php");
+require_once(__DIR__ . "/../includes/layout.php");
 
 layout("repo", function(){ ?>
     <div class="container">

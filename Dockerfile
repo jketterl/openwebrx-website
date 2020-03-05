@@ -7,11 +7,13 @@ ENTRYPOINT ["/init"]
 ADD conf/php-fpm /etc/services.d/php-fpm
 
 RUN apk add --no-cache lighttpd php7-fpm && \
-    echo -e 'include "mod_fastcgi_fpm.conf"\nserver.modules += ("mod_ssi")\nssi.extension = (".html")\n' >> /etc/lighttpd/lighttpd.conf
+    echo -e 'include "mod_fastcgi_fpm.conf"\n' >> /etc/lighttpd/lighttpd.conf
 EXPOSE 80
 CMD [ "/usr/sbin/lighttpd",  "-Df",  "/etc/lighttpd/lighttpd.conf" ]
 
 RUN wget -O - https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip | unzip -d /var/www/localhost/htdocs - && \
-    mv /var/www/localhost/htdocs/bootstrap-4.3.1-dist /var/www/localhost/htdocs/bootstrap
+    mv /var/www/localhost/htdocs/bootstrap-4.3.1-dist /var/www/localhost/htdocs/bootstrap && \
+    mkdir -p /var/www/localhost/htdocs/jquery && \
+    wget -O /var/www/localhost/htdocs/jquery/jquery.min.js https://code.jquery.com/jquery-3.4.1.min.js
 
 ADD ws/ /var/www/localhost/htdocs
