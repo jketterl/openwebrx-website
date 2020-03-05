@@ -4,12 +4,12 @@ ADD https://github.com/just-containers/s6-overlay/releases/download/v1.21.8.0/s6
 RUN tar xzf /tmp/s6-overlay-amd64.tar.gz -C /
 ENTRYPOINT ["/init"]
 
-ADD conf/php-fpm /etc/services.d/php-fpm
-ADD conf/lighttpd /etc/services.d/lighttpd
-
 RUN apk add --no-cache lighttpd php7-fpm && \
     echo -e 'include "mod_fastcgi_fpm.conf"\n' >> /etc/lighttpd/lighttpd.conf
 EXPOSE 80
+
+ADD conf/php-fpm /etc/services.d/php-fpm
+ADD conf/lighttpd /etc/services.d/lighttpd
 
 RUN wget -qO - https://github.com/twbs/bootstrap/releases/download/v4.4.1/bootstrap-4.4.1-dist.zip | unzip -d /var/www/localhost/htdocs - && \
     mv /var/www/localhost/htdocs/bootstrap-4.4.1-dist /var/www/localhost/htdocs/bootstrap && \
