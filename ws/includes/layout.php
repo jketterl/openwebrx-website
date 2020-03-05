@@ -14,7 +14,7 @@ $menu = [
     [
         "id" => "repo",
         "text" => "Repository",
-        "href" => "/repo.php"
+        "href" => "/repository.php"
     ]
 ];
 
@@ -26,6 +26,7 @@ function layout(string $menu_id, callable $content_generator) {
 <head>
     <title>OpenWebRX</title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/openwebrx.css" />
     <link rel="stylesheet" type="text/css" href="css/sticky-footer.css" />
 </head>
 <body>

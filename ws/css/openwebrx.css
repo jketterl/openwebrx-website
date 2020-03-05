@@ -1,0 +1,16 @@
+h1 {
+	margin-top: 50px;
+}
+
+h3 {
+	margin-top: 20px;
+}
+
+pre {
+	background-color: rgba(200, 200, 200, 0.25);
+}
+
+pre.block {
+	padding: 10px;
+	border-radius: 5px;
+}
