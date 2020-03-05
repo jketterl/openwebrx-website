@@ -31,7 +31,11 @@ function layout(string $menu_id, callable $content_generator) {
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="navbar-brand">OpenWebRX</div>
+        <div class="navbar-brand">
+            <a href="https://www.openwebrx.de">
+                <img src="gfx/openwebrx-logo-big.png" alt="OpenWebRX" />
+            </a>
+        </div>
         <div class="collapse navbar-collapse">
             <div class="navbar-nav">
                 <?php foreach($menu as $item) { ?>

@@ -14,3 +14,7 @@ pre.block {
 	padding: 10px;
 	border-radius: 5px;
 }
+
+.navbar-brand img {
+    height: 40px;
+}
