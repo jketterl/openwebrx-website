@@ -1,7 +1,13 @@
 FROM alpine:latest
 
-RUN apk add --no-cache lighttpd && \
-    echo -e 'server.modules += ("mod_ssi")\nssi.extension = (".html")\n' >> /etc/lighttpd/lighttpd.conf
+ADD https://github.com/just-containers/s6-overlay/releases/download/v1.21.8.0/s6-overlay-amd64.tar.gz /tmp/
+RUN tar xzf /tmp/s6-overlay-amd64.tar.gz -C /
+ENTRYPOINT ["/init"]
+
+ADD conf/php-fpm /etc/services.d/php-fpm
+
+RUN apk add --no-cache lighttpd php7-fpm && \
+    echo -e 'include "mod_fastcgi_fpm.conf"\nserver.modules += ("mod_ssi")\nssi.extension = (".html")\n' >> /etc/lighttpd/lighttpd.conf
 EXPOSE 80
 CMD [ "/usr/sbin/lighttpd",  "-Df",  "/etc/lighttpd/lighttpd.conf" ]
 
