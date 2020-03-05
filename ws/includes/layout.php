@@ -19,6 +19,11 @@ $menu = [
                 "id" => "debian",
                 "text" => "Debian",
                 "href" => "/repositories/debian.php"
+            ],
+            [
+                "id" => "docker",
+                "text" => "Docker",
+                "href" => "https://hub.docker.com/r/jketterl/openwebrx"
             ]
         ]
     ]
