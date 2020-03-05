@@ -11,9 +11,10 @@ RUN apk add --no-cache lighttpd php7-fpm && \
     echo -e 'include "mod_fastcgi_fpm.conf"\n' >> /etc/lighttpd/lighttpd.conf
 EXPOSE 80
 
-RUN wget -O - https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip | unzip -d /var/www/localhost/htdocs - && \
-    mv /var/www/localhost/htdocs/bootstrap-4.3.1-dist /var/www/localhost/htdocs/bootstrap && \
+RUN wget -qO - https://github.com/twbs/bootstrap/releases/download/v4.4.1/bootstrap-4.4.1-dist.zip | unzip -d /var/www/localhost/htdocs - && \
+    mv /var/www/localhost/htdocs/bootstrap-4.4.1-dist /var/www/localhost/htdocs/bootstrap && \
+    wget -qO /var/www/localhost/htdocs/bootstrap/css/bootstrap.min.css https://bootswatch.com/4/darkly/bootstrap.min.css && \
     mkdir -p /var/www/localhost/htdocs/jquery && \
-    wget -O /var/www/localhost/htdocs/jquery/jquery.min.js https://code.jquery.com/jquery-3.4.1.min.js
+    wget -qO /var/www/localhost/htdocs/jquery/jquery.min.js https://code.jquery.com/jquery-3.4.1.min.js
 
 ADD ws/ /var/www/localhost/htdocs
