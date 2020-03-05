@@ -41,6 +41,8 @@ function layout(string $menu_id, callable $content_generator) {
 <html>
 <head>
     <title>OpenWebRX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/openwebrx.css" />
     <link rel="stylesheet" type="text/css" href="/css/sticky-footer.css" />
