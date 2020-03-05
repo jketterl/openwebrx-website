@@ -8,8 +8,13 @@ $menu = [
     ],
     [
         "id" => "wiki",
-        "text" => "Wiki",
+        "text" => "Documentation",
         "href" => "https://github.com/jketterl/openwebrx/wiki"
+    ],
+    [
+        "id" => "community",
+        "text" => "Community",
+        "href" => "https://groups.io/g/openwebrx"
     ],
     [
         "id" => "repo",
