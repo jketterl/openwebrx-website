@@ -18,22 +18,22 @@ $menu = [
     ],
     [
         "id" => "repo",
-        "text" => "Repositories",
+        "text" => "Get OpenWebRX",
         "dropdown" => [
             [
                 "id" => "debian",
-                "text" => "Debian",
-                "href" => "/repositories/debian.php"
+                "text" => "Debian repository",
+                "href" => "/download/debian.php"
             ],
             [
                 "id" => "docker",
-                "text" => "Docker",
+                "text" => "Docker images",
                 "href" => "https://hub.docker.com/r/jketterl/openwebrx"
             ],
             [
                 "id" => "rpi",
-                "text" => "Raspberry Pi",
-                "href" => "/repositories/rpi.php"
+                "text" => "Raspberry Pi images",
+                "href" => "/download/rpi.php"
             ]
         ]
     ]
