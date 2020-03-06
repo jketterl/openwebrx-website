@@ -94,8 +94,8 @@ function layout(string $menu_id, callable $content_generator) {
     <?php echo $content_generator(); ?>
     <footer class="footer">
         <span>Built with <a href="https://getbootstrap.com/">Bootstrap</a></span> |
-        <span>Darkly Theme by Thomas Park <a href="https://bootswatch.com/darkly/">bootswatch.com</a></span> |
-        <a class="footer-item" href="/impressum.php">Impressum</a>
+        <span><a href="https://bootswatch.com/darkly/">Darkly theme by Thomas Park</a></span> |
+        <span><a class="footer-item" href="/impressum.php">Impressum</a></span>
     </footer>
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
