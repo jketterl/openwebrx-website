@@ -21,11 +21,10 @@ pre.block {
 
 .openwebrx-background {
     margin-top: 50px;
-    padding-top: 45%;
-    background-image: url(../gfx/openwebrx-screenshot.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.openwebrx-background img {
+    width: 100%;
 }
 
 .openwebrx-background h1 {
@@ -37,4 +36,14 @@ pre.block {
       0 0 5px #222,
       0 0 10px #111,
       0 0 20px #000;
+}
+
+.image-fadeout::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0) 0, #222 100%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
 }

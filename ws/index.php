@@ -4,6 +4,9 @@ require_once(__DIR__ . "/includes/layout.php");
 layout("home", function(){ ?>
     <div class="container">
         <div class="col-12 openwebrx-background">
+            <div class="image-fadeout">
+                <img src="/gfx/openwebrx-screenshot.png" />
+            </div>
             <h1>OpenWebRX web-based SDR receiver</h1>
         </div>
         <div class="col-12 mt-5">
