@@ -29,6 +29,11 @@ $menu = [
                 "id" => "docker",
                 "text" => "Docker",
                 "href" => "https://hub.docker.com/r/jketterl/openwebrx"
+            ],
+            [
+                "id" => "rpi",
+                "text" => "Raspberry Pi",
+                "href" => "/repositories/rpi.php"
             ]
         ]
     ]

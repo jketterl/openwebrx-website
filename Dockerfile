@@ -4,7 +4,7 @@ ADD https://github.com/just-containers/s6-overlay/releases/download/v1.21.8.0/s6
 RUN tar xzf /tmp/s6-overlay-amd64.tar.gz -C /
 ENTRYPOINT ["/init"]
 
-RUN apk add --no-cache lighttpd php7-fpm && \
+RUN apk add --no-cache lighttpd php7-fpm php7-mbstring php7-openssl php7-simplexml php7-json php7-intl && \
     echo -e 'include "mod_fastcgi_fpm.conf"\n' >> /etc/lighttpd/lighttpd.conf
 EXPOSE 80
 
@@ -13,6 +13,8 @@ ADD conf/lighttpd /etc/services.d/lighttpd
 
 RUN wget -qO - https://github.com/twbs/bootstrap/releases/download/v4.4.1/bootstrap-4.4.1-dist.zip | unzip -d /var/www/localhost/htdocs - && \
     mv /var/www/localhost/htdocs/bootstrap-4.4.1-dist /var/www/localhost/htdocs/bootstrap && \
+    mkdir -p /var/www/localhost/php/aws-sdk && \
+    wget -qO - https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip | unzip -d /var/www/localhost/php/aws-sdk - && \
     wget -qO /var/www/localhost/htdocs/bootstrap/css/bootstrap.min.css https://bootswatch.com/4/darkly/bootstrap.min.css && \
     mkdir -p /var/www/localhost/htdocs/jquery && \
     wget -qO /var/www/localhost/htdocs/jquery/jquery.min.js https://code.jquery.com/jquery-3.4.1.min.js
