@@ -18,3 +18,23 @@ pre.block {
 .navbar-brand img {
     height: 40px;
 }
+
+.openwebrx-background {
+    margin-top: 50px;
+    padding-top: 45%;
+    background-image: url(../gfx/openwebrx-screenshot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.openwebrx-background h1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-shadow:
+      0 0 5px #222,
+      0 0 10px #111,
+      0 0 20px #000;
+}
