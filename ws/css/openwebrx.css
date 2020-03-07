@@ -21,10 +21,12 @@ pre.block {
 
 .openwebrx-background {
     margin-top: 50px;
+    text-align: center;
 }
 
 .openwebrx-background img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 70vh;
 }
 
 .openwebrx-background h1 {
