@@ -34,6 +34,12 @@ $menu = [
                 "id" => "rpi",
                 "text" => "Raspberry Pi images",
                 "href" => "/download/rpi.php"
+            ],
+            "|",
+            [
+                "id" => "source",
+                "text" => "Source code",
+                "href" => "https://github.com/jketterl/openwebrx"
             ]
         ]
     ]
@@ -73,11 +79,15 @@ function layout(string $menu_id, callable $content_generator) {
                                 <?php echo $item["text"]; ?>
                             </a>
                             <div class="dropdown-menu">
-                                <?php foreach($item["dropdown"] as $dropdown_item) { ?>
-                                    <a class="dropdown-item" href="<?php echo $dropdown_item["href"]; ?>">
-                                        <?php echo $dropdown_item["text"]; ?>
-                                    </a>
-                                <?php } ?>
+                                <?php foreach($item["dropdown"] as $dropdown_item) {
+                                    if (is_array($dropdown_item)) { ?>
+                                        <a class="dropdown-item" href="<?php echo $dropdown_item["href"]; ?>">
+                                            <?php echo $dropdown_item["text"]; ?>
+                                        </a>
+                                    <?php } elseif ($dropdown_item == "|") { ?>
+                                        <div class="dropdown-divider"></div>
+                                    <?php }
+                                } ?>
                             </div>
                         </div>
                     <?php } else { ?>
