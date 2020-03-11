@@ -1,11 +1,11 @@
 <?php
 require_once(__DIR__ . "/includes/layout.php");
 
-layout("home", function(){ ?>
+layout("home", "Homepage", function(){ ?>
     <div class="container">
         <div class="col-12 openwebrx-background">
             <div class="image-fadeout">
-                <img src="/gfx/openwebrx-screenshot.png" />
+                <img src="/gfx/openwebrx-screenshot.png" alt="OpenWebRX screenshot" />
             </div>
             <h1>OpenWebRX web-based SDR receiver</h1>
         </div>

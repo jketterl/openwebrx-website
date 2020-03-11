@@ -4,7 +4,7 @@ require_once(__DIR__ . "/../../php/aws-sdk/aws-autoloader.php");
 
 use Aws\S3\S3Client;
 
-layout("repo", function(){
+layout("repo", "Raspberry Pi downloads", function(){
     $bucket = "de.dd5jfk.openwebrx";
 
     $s3 = new Aws\S3\S3Client([

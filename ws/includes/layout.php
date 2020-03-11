@@ -45,16 +45,17 @@ $menu = [
     ]
 ];
 
-function layout(string $menu_id, callable $content_generator) {
+function layout(string $menu_id, string $title, callable $content_generator) {
     global $menu;
     ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>OpenWebRX</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#222">
+    <title>OpenWebRX web-based software defined radio | <?php echo $title; ?></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#222" />
+    <meta name="description" content="OpenWebRX web-based software defined radio receiver" />
     <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/openwebrx.css" />
     <link rel="stylesheet" type="text/css" href="/css/sticky-footer.css" />

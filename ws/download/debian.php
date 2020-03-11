@@ -1,7 +1,7 @@
 <?php
 require_once(__DIR__ . "/../includes/layout.php");
 
-layout("repo", function(){ ?>
+layout("repo", "Debian Repository", function(){ ?>
     <div class="container">
         <div class="col-12">
             <h1>OpenWebRX Repository</h1>
