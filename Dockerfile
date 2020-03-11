@@ -8,7 +8,7 @@ RUN apk add --no-cache lighttpd php7-fpm php7-mbstring php7-openssl php7-simplex
     echo -e 'include "mod_fastcgi_fpm.conf"\nserver.modules += ("mod_compress", "mod_expire", "mod_setenv")\n\
         compress.filetype = ("text/plain", "text/html", "text/javascript", "text/css")\n\
         expire.mimetypes = ("text/" => "access plus 1 days")\n\
-        setenv.add-response-header += ("Cache-Control" => "public, must-revalidate, max-age=86400")\n'\
+        setenv.add-response-header += ("Cache-Control" => "public, must-revalidate, max-age=86400", "Content-Language" => "en")\n'\
     >> /etc/lighttpd/lighttpd.conf && \
     echo -e 'zlib.output_compression = On\n' > /etc/php7/conf.d/01-compression.ini
 EXPOSE 80

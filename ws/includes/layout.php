@@ -49,7 +49,7 @@ function layout(string $menu_id, string $title, callable $content_generator) {
     global $menu;
     ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>OpenWebRX web-based software defined radio | <?php echo $title; ?></title>
     <meta charset="utf-8" />
