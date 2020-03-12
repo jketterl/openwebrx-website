@@ -58,7 +58,6 @@ function layout(string $menu_id, string $title, callable $content_generator) {
     <meta name="description" content="OpenWebRX web-based software defined radio receiver" />
     <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/openwebrx.css" />
-    <link rel="stylesheet" type="text/css" href="/css/sticky-footer.css" />
     <script src="/jquery/jquery.min.js"></script>
 </head>
 <body>
