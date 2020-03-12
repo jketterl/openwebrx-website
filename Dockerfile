@@ -22,7 +22,8 @@ RUN echo -e 'include "mod_fastcgi_fpm.conf"\nserver.modules += ("mod_compress", 
         compress.filetype = ("text/plain", "text/html", "text/javascript", "text/css")\n\
         expire.mimetypes = ("text/" => "access plus 1 days")\n\
         setenv.add-response-header += ("Cache-Control" => "public, must-revalidate, max-age=86400", "Content-Language" => "en")\n\
-        server.tag=""\n'\
+        server.tag = ""\n\
+        server.errorlog := ""\n'\
     >> /etc/lighttpd/lighttpd.conf && \
     echo -e 'zlib.output_compression = On\n' > /etc/php7/conf.d/01-compression.ini && \
     echo -e 'expose_php = Off\n' > /etc/php7/conf.d/02-disable-powered-by.ini
