@@ -55,7 +55,7 @@ function layout(string $menu_id, string $title, callable $content_generator) {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="theme-color" content="#222" />
-    <meta name="description" content="OpenWebRX web-based software defined radio receiver" />
+    <meta name="description" content="OpenWebRX web-based software defined radio receiver, remote HF spectrum monitoring with a wide variety of demodulators." />
     <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/openwebrx.css" />
     <script src="/jquery/jquery.min.js"></script>
