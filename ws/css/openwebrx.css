@@ -49,3 +49,7 @@ pre.block {
   width: 100%;
   content: '';
 }
+
+.twitter-button iframe {
+    vertical-align: middle;
+}
