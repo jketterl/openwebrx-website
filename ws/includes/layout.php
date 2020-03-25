@@ -7,6 +7,11 @@ $menu = [
         "href" => "/"
     ],
     [
+        "id" => "news",
+        "text" => "News",
+        "href" => "news.php"
+    ],
+    [
         "id" => "wiki",
         "text" => "Documentation",
         "href" => "https://github.com/jketterl/openwebrx/wiki"
