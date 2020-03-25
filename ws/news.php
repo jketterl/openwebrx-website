@@ -8,7 +8,7 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
-            <h2>OpenWebRX 0.18</h2>
+            <h2>OpenWebRX 0.18.0</h2>
             <div>Released on February 22, 2020 <span class="badge badge-success">Current Release</span></div>
             <ul class="mt-2">
                 <li>Most of the server code has been rewritten for better flexibility, stability and performance. The project is now fully based on Python 3.</li>
