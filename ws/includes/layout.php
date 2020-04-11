@@ -31,6 +31,11 @@ $menu = [
                 "href" => "/download/debian.php"
             ],
             [
+                "id" => "ubuntu",
+                "text" => "Ubuntu repository",
+                "href" => "/download/ubuntu.php"
+            ],
+            [
                 "id" => "docker",
                 "text" => "Docker images",
                 "href" => "https://hub.docker.com/r/jketterl/openwebrx"
