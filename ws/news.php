@@ -8,8 +8,23 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 0.19.0</h2>
+            <div>Releaseed on June 02, 2020 <span class="badge badge-success">Current Release</span></div>
+            <ul class="mt-2">
+                <li>The JS8Call digimode can now be decoded if the JS8Call software is installed</li>
+                <li>Many parts of the frontend have been restructured and rewritten for better integrity</li>
+                <li>Added support for Perseus-SDR devices</li>
+                <li>Added support for RadioBerry 2</li>
+                <li>HackRF support has been migrated to SoapySDR</li>
+                <li>Improved direct sampling mode handling for RTL-SDR Blog V.3 devices</li>
+                <li>Various parameters added for device control across all SDR types</li>
+                <li>Automatic fallback to OSM for the map when Google Maps has not been configured</li>
+                <li>Docker builds are now based on Debian "slim" images for improved portability</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 0.18.0</h2>
-            <div>Released on February 22, 2020 <span class="badge badge-success">Current Release</span></div>
+            <div>Released on February 22, 2020</div>
             <ul class="mt-2">
                 <li>Most of the server code has been rewritten for better flexibility, stability and performance. The project is now fully based on Python 3.</li>
                 <li>Large parts of the frontend code have been updated or polished.</li>
