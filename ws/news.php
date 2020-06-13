@@ -8,8 +8,15 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 0.19.1</h2>
+            <div>Releaseed on June 13, 2020 <span class="badge badge-success">Current Release</span></div>
+            <ul class="mt-2">
+                <li>Added ability to authenticate receivers with listing sites using "receiver id" tokens</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 0.19.0</h2>
-            <div>Releaseed on June 02, 2020 <span class="badge badge-success">Current Release</span></div>
+            <div>Releaseed on June 02, 2020</div>
             <ul class="mt-2">
                 <li>The JS8Call digimode can now be decoded if the JS8Call software is installed</li>
                 <li>Many parts of the frontend have been restructured and rewritten for better integrity</li>
