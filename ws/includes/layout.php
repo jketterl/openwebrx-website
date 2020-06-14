@@ -22,6 +22,11 @@ $menu = [
         "href" => "https://groups.io/g/openwebrx"
     ],
     [
+        "id" => "receiverbook",
+        "text" => "Receiverbook",
+        "href" => "https://www.receiverbook.de"
+    ],
+    [
         "id" => "repo",
         "text" => "Get OpenWebRX",
         "dropdown" => [
@@ -71,7 +76,7 @@ function layout(string $menu_id, string $title, callable $content_generator) {
     <script src="/jquery/jquery.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="navbar-brand">
             <a href="https://www.openwebrx.de">
                 <img src="/gfx/openwebrx-logo-big.png" alt="OpenWebRX" />

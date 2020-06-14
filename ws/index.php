@@ -16,6 +16,9 @@ layout("home", "Homepage", function(){ ?>
             <p>
                 OpenWebRX aims to support as many modulations and encodings as possible, while still focusing on an easy-to-use interface, so that even inexperienced users can explore the HF spectrum without the need to buy expensive radio equipment.
             </p>
+            <p>
+                <a href="https://www.receiverbook.de" target="_blank">Receiverbook</a> is a free directory service listing online SDR receivers from your area or all around the world. Why don't you try it out?
+            </p>
         </div>
     </div>
 <?php });
