@@ -5,6 +5,12 @@ layout("impressum", "Impressum", function(){ ?>
     <div class="container">
         <div class="col-12">
             <h1>Impressum</h1>
+            <div class="alert alert-warning">
+                <h4>Important Notice</h4>
+                The contact information on this page is provided for legal purposes only. Any questions or requests
+                concerning OpenWebRX should go to the Community mailing lists. All issues and bugs should go to
+                github.
+            </div>
             <h3>Angaben gemäß § 5 TMG</h3>
             <div class="mt-3">
                 Jakob Ketterl<br />
