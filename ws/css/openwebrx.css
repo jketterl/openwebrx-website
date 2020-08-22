@@ -40,6 +40,33 @@ pre.block {
       0 0 20px #000;
 }
 
+/* reserve space for the homepage image to improve our CLS score */
+/* the values here are pre-calculated and need to be updated when the image is change */
+
+@media (min-width: 576px) {
+    .openwebrx-background img {
+        height: 270px;
+    }
+}
+
+@media (min-width: 768px) {
+    .openwebrx-background img {
+        height: 371.25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .openwebrx-background img {
+        height: 506.25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .openwebrx-background img {
+        height: 607.5px;
+    }
+}
+
 .image-fadeout::after {
   display: block;
   position: relative;
