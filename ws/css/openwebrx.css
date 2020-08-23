@@ -51,19 +51,19 @@ pre.block {
 
 @media (min-width: 768px) {
     .openwebrx-background img {
-        height: 371.25px;
+        height: 371px;
     }
 }
 
 @media (min-width: 992px) {
     .openwebrx-background img {
-        height: 506.25px;
+        height: 506px;
     }
 }
 
 @media (min-width: 1200px) {
     .openwebrx-background img {
-        height: 607.5px;
+        height: 608px;
     }
 }
 

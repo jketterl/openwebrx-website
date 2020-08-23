@@ -5,7 +5,20 @@ layout("home", "Homepage", function(){ ?>
     <div class="container">
         <div class="col-12 openwebrx-background">
             <div class="image-fadeout">
-                <img src="/gfx/openwebrx-screenshot.webp" alt="OpenWebRX screenshot" />
+                <img
+                    src="/gfx/openwebrx-screenshot.webp"
+                    alt="OpenWebRX screenshot"
+                    srcset="/gfx/openwebrx-screenshot-480.webp 480w,
+                            /gfx/openwebrx-screenshot-660.webp 660w,
+                            /gfx/openwebrx-screenshot-899.webp 899w,
+                            /gfx/openwebrx-screenshot-1080.webp 1080w,
+                            /gfx/openwebrx-screenshot.webp 1920w"
+                    sizes="(min-width: 1200px) 1080px,
+                           (min-width: 992px) 899px,
+                           (min-width: 768px) 660px,
+                           (min-width: 576px) 480px,
+                           480px"
+                />
             </div>
             <h1>OpenWebRX web-based SDR receiver</h1>
         </div>
