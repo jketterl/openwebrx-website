@@ -79,7 +79,13 @@ function layout(string $menu_id, string $title, callable $content_generator) {
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="navbar-brand">
             <a href="https://www.openwebrx.de">
-                <img src="/gfx/openwebrx-logo-big.png" alt="OpenWebRX" />
+                <img
+                    src="/gfx/openwebrx-logo-591.webp"
+                    alt="OpenWebRX"
+                    srcset="/gfx/openwebrx-logo-591.webp 591w,
+                            /gfx/openwebrx-logo-236.webp 236w"
+                    sizes="236px"
+                />
             </a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
