@@ -22,6 +22,7 @@ RUN echo -e 'include "mod_fastcgi_fpm.conf"\nserver.modules += ("mod_compress", 
         compress.filetype = ("text/plain", "text/html", "text/javascript", "text/css")\n\
         expire.mimetypes = ("text/" => "access plus 1 hours")\n\
         setenv.add-response-header += ("Cache-Control" => "public, must-revalidate, max-age=3600", "Content-Language" => "en")\n\
+        mimetype.assign += (".webp" => "image/webp")\n\
         server.tag = ""\n\
         server.errorlog := ""\n'\
     >> /etc/lighttpd/lighttpd.conf && \
