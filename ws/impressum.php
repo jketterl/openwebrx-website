@@ -8,9 +8,10 @@ layout("impressum", "Impressum", function(){ ?>
             <div class="alert alert-warning">
                 <h4>Important Notice</h4>
                 The contact information on this page is provided for legal purposes only. Any questions or requests
-                concerning OpenWebRX should go to the <a href="https://groups.io/g/openwebrx" target="_blank">Community
-                mailing lists</a>. All issues and bug reports should go to
-                <a href="https://github.com/jketterl/openwebrx" target="_blank">github</a>.
+                concerning OpenWebRX should go to the
+                <a href="https://groups.io/g/openwebrx" target="_blank" rel="noopener">Community mailing lists</a>.
+                All issues and bug reports should go to
+                <a href="https://github.com/jketterl/openwebrx" target="_blank" rel="noopener">github</a>.
             </div>
             <h3>Angaben gemäß § 5 TMG</h3>
             <div class="mt-3">
