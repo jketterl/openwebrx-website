@@ -13,7 +13,7 @@ RUN wget -qO - https://github.com/twbs/bootstrap/releases/download/v4.4.1/bootst
     wget -qO - https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip | unzip -d /var/www/localhost/php/aws-sdk - && \
     wget -qO /var/www/localhost/htdocs/bootstrap/css/bootstrap.min.css https://bootswatch.com/4/darkly/bootstrap.min.css && \
     mkdir -p /var/www/localhost/htdocs/jquery && \
-    wget -qO /var/www/localhost/htdocs/jquery/jquery.min.js https://code.jquery.com/jquery-3.4.1.min.js
+    wget -qO /var/www/localhost/htdocs/jquery/jquery.min.js https://code.jquery.com/jquery-3.5.1.min.js
 
 ADD conf/php-fpm /etc/services.d/php-fpm
 ADD conf/lighttpd /etc/services.d/lighttpd
