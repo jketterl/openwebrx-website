@@ -10,14 +10,14 @@ layout("home", "Homepage", function(){ ?>
                     alt="OpenWebRX screenshot"
                     srcset="/gfx/openwebrx-screenshot-480.webp 480w,
                             /gfx/openwebrx-screenshot-660.webp 660w,
-                            /gfx/openwebrx-screenshot-899.webp 899w,
+                            /gfx/openwebrx-screenshot-900.webp 900w,
                             /gfx/openwebrx-screenshot-1080.webp 1080w,
                             /gfx/openwebrx-screenshot.webp 1920w"
                     sizes="(min-width: 1200px) 1080px,
-                           (min-width: 992px) 899px,
+                           (min-width: 992px) 900px,
                            (min-width: 768px) 660px,
                            (min-width: 576px) 480px,
-                           480px"
+                           calc(100vw - 60px)"
                 />
             </div>
             <h1>OpenWebRX web-based SDR receiver</h1>
