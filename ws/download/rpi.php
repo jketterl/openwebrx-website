@@ -53,7 +53,7 @@ layout("repo", "Raspberry Pi downloads", function(){
                         <?php foreach($matched as $o) { ?>
                             <tr>
                                 <td>
-                                    <a href="<?php echo $s3->getObjectUrl($bucket, $o["Key"]); ?>">
+                                    <a href="https://www.openwebrx.de/images/<?php echo $o["Key"]; ?>">
                                         <?php echo $o["Key"]; ?>
                                     </a>
                                 </td>
