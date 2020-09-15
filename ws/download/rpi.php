@@ -24,16 +24,21 @@ layout("repo", "Raspberry Pi downloads", function(){
     $matched = [];
 
     foreach ($objects as $o) {
-        $p = explode("/", $o["Key"]);
-        if (count($p) > 1 && !in_array($p[0], $paths)) {
-            $paths[] = $p[0];
-        }
-
-        $path = implode("/", array_slice($p, 0, count($p) - 1));
-        if ($path == $searchPath) {
-            $matched[] = $o;
+        if (substr($o["Key"], 0, strlen($searchPath)) == $searchPath) {
+            $remaining = substr($o["Key"], strlen($searchPath));
+            if (strlen($remaining) > 0) {
+                $p = explode("/", $remaining);
+                $path = implode("/", array_slice($p, 0, count($p) - 1));
+                if (count($p) > 1) {
+                    $paths[] = $p[0];
+                } else {
+                    $matched[] = $o;
+                }
+            }
         }
     }
+
+    $paths = array_unique($paths);
 
     usort($matched, function($a, $b){
         return $b["LastModified"]->getTimestamp() - $a["LastModified"]->getTimestamp();
@@ -65,7 +70,7 @@ layout("repo", "Raspberry Pi downloads", function(){
                         <?php foreach($paths as $p) { ?>
                             <tr>
                                 <td colspan="2">
-                                    <a href="?path=<?php echo $p; ?>">
+                                    <a href="?path=<?php echo $p; ?>/">
                                         <?php echo $p; ?>/
                                     </a>
                                 </td>
