@@ -25,11 +25,6 @@ pre.block {
     text-align: center;
 }
 
-.openwebrx-background img {
-    max-width: 100%;
-    max-height: 70vh;
-}
-
 .openwebrx-background h1 {
     position: absolute;
     bottom: 0;
@@ -44,26 +39,37 @@ pre.block {
 /* reserve space for the homepage image to improve our CLS score */
 /* the values here are pre-calculated and need to be updated when the image is change */
 
+.openwebrx-background img {
+    max-width: calc(70vh / .5625);
+    max-height: 70vh;
+    width: calc(100vw - 60px);
+    height: calc((100vw - 60px) * .5625);
+}
+
 @media (min-width: 576px) {
     .openwebrx-background img {
+        width: 480px;
         height: 270px;
     }
 }
 
 @media (min-width: 768px) {
     .openwebrx-background img {
+        width: 660px;
         height: 371px;
     }
 }
 
 @media (min-width: 992px) {
     .openwebrx-background img {
+        width: 900px;
         height: 506px;
     }
 }
 
 @media (min-width: 1200px) {
     .openwebrx-background img {
+        width: 1080px;
         height: 608px;
     }
 }
