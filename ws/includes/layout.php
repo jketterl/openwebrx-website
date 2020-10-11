@@ -9,7 +9,7 @@ $menu = [
     [
         "id" => "news",
         "text" => "News",
-        "href" => "news.php"
+        "href" => "/news.php"
     ],
     [
         "id" => "wiki",
