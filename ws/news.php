@@ -8,8 +8,23 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 0.20.0</h2>
+            <div>Released on October 11, 2020 <span class="badge badge-success">Current Release</span></div>
+            <ul class="mt-2">
+                <li>Added support for decoding the FreeDV mode. Please see the <a href="https://github.com/jketterl/openwebrx/wiki/FreeDV-demodulator-notes" target="_blank" rel="noopener">FreeDV notes on the wiki</a> for more information about the installation of codec2 since this requires some extra steps.</li>
+                <li>Added support for wideband FM (aka broadcast FM) so you can now listen to FM radio stations (or other similar broadcasts). This comes along a new audio delivery pipeline that, for the first time, allows higher sample rate audio to be delivered to the client (up to 48kHz).</li>
+                <li>Added support for decoding DRM broadcasts using the dream decoder. Please see the <a href="https://github.com/jketterl/openwebrx/wiki/DRM-demodulator-notes" target="_blank" rel="noopener">DRM notes on the wiki</a> for installation instructions since this requires the compilation of a version of dream without its GUI.</li>
+                <li>The audio AGC has been reworked and should now produce better results for AM and SSB modes. NFM now has an AGC (again), too.</li>
+                <li>The waterfall now features the <a href="https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html" target="_blank" rel="noopener">"Turbo"</a> colormap by default. Please note that you will need to merge this part of the configuration if you are on an existing installation.</li>
+                <li>There's now a new, experimental "continuous automatic waterfall calibration" available. Right-click the "auto-adjust waterfall colors" button to give it a try. Feedback welcome!</li>
+                <li>New devices: added support for the FunCube Dongle Pro+ and added a new connector for remote devices available through "rtl_tcp".</li>
+                <li>Many fixes for filedescriptor and thread leaks to prevent "too many open files" errors that made OpenWebRX unusable after some time (depending on traffic).</li>
+                <li>Fixed an error where the connectors wouldn't accept new connections after some time (depending on traffic).</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 0.19.1</h2>
-            <div>Releaseed on June 13, 2020 <span class="badge badge-success">Current Release</span></div>
+            <div>Releaseed on June 13, 2020</div>
             <ul class="mt-2">
                 <li>Added ability to authenticate receivers with listing sites using "receiver id" tokens</li>
             </ul>
