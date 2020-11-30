@@ -8,8 +8,15 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 0.20.1</h2>
+            <div>Released on November 30, 2020 <span class="badge badge-success">Current Release</span></div>
+            <ul class="mt-2">
+                <li>Remove broken OSM map fallback</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 0.20.0</h2>
-            <div>Released on October 11, 2020 <span class="badge badge-success">Current Release</span></div>
+            <div>Released on October 11, 2020</div>
             <ul class="mt-2">
                 <li>Added support for decoding the FreeDV mode. Please see the <a href="https://github.com/jketterl/openwebrx/wiki/FreeDV-demodulator-notes" target="_blank" rel="noopener">FreeDV notes on the wiki</a> for more information about the installation of codec2 since this requires some extra steps.</li>
                 <li>Added support for wideband FM (aka broadcast FM) so you can now listen to FM radio stations (or other similar broadcasts). This comes along a new audio delivery pipeline that, for the first time, allows higher sample rate audio to be delivered to the client (up to 48kHz).</li>
