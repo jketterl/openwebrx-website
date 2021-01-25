@@ -73,6 +73,7 @@ function layout(string $menu_id, string $title, callable $content_generator) {
     <meta name="description" content="OpenWebRX web-based software defined radio receiver, remote HF spectrum monitoring with a wide variety of demodulators." />
     <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/openwebrx.css" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
     <script src="/jquery/jquery.min.js"></script>
 </head>
 <body>
