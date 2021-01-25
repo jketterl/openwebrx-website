@@ -8,8 +8,15 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 0.20.2</h2>
+            <div>Released on January 25, 2021 <span class="badge badge-success">Current Release</span> <span class="badge badge-danger">Security Hotfix</span></div>
+            <ul class="mt-2">
+                <li>Fixes an arbitrary code execution vulnerability</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 0.20.1</h2>
-            <div>Released on November 30, 2020 <span class="badge badge-success">Current Release</span></div>
+            <div>Released on November 30, 2020</div>
             <ul class="mt-2">
                 <li>Remove broken OSM map fallback</li>
             </ul>
