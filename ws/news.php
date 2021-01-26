@@ -8,8 +8,15 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 0.20.3</h2>
+            <div>Released on January 26, 2021 <span class="badge badge-success">Current Release</span></div>
+            <ul class="mt-2">
+                <li>Fixes an incompatibility issue with python versions <= 3.6</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 0.20.2</h2>
-            <div>Released on January 25, 2021 <span class="badge badge-success">Current Release</span> <span class="badge badge-danger">Security Hotfix</span></div>
+            <div>Released on January 25, 2021 <span class="badge badge-danger">Security Hotfix</span></div>
             <ul class="mt-2">
                 <li>Fixes an arbitrary code execution vulnerability</li>
             </ul>
