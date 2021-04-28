@@ -1,5 +1,5 @@
 <?php
-function repository($dist, $codename, $experimentalComponent) { ?>
+function repository($fullname, $dist, $codename, $experimentalComponent) { ?>
     <div class="container">
         <div class="col-12">
             <h1>OpenWebRX Repository</h1>
@@ -11,7 +11,7 @@ function repository($dist, $codename, $experimentalComponent) { ?>
             </div>
         </div>
         <div class="col-12">
-            <h3>OpenWebRX official releases for <?php echo ucfirst($dist) . " " . ucfirst($codename); ?></h3>
+            <h3>OpenWebRX official releases for <?php echo $fullname; ?></h3>
             <pre class="block">
 wget -O - https://repo.openwebrx.de/debian/key.gpg.txt | apt-key add
 echo "deb https://repo.openwebrx.de/<?php echo $dist; ?>/ <?php echo $codename; ?> main" > /etc/apt/sources.list.d/openwebrx.list
