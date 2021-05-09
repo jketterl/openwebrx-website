@@ -8,8 +8,20 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 1.0.0</h2>
+            <div>Released on May 09, 2021 <span class="badge badge-success">Current Release</span></div>
+            <ul class="mt-2">
+                <li>Introduces the new web configuration interface and backend storage system</li>
+                <li>Introduces a new user management system to facilitate web config authorization</li>
+                <li>Now supports the new WSJT-X modes FST4, FST4W and Q65</li>
+                <li>Added support for the new <a href="https://m17project.org/" target="_blank" rel="noopener">M17 digital voice mode</a></li>
+                <li>Added support for uploading spot to <a href="http://www.wsprnet.org/" target="_blank" rel="noopener">WSPRnet</a></li>
+                <li>New devices: Added support for Hermes HPSDR devices (thanks to Jim Ancona) and R&S network devices using the EB200 or Ammos protocols</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 0.20.3</h2>
-            <div>Released on January 26, 2021 <span class="badge badge-success">Current Release</span></div>
+            <div>Released on January 26, 2021</div>
             <ul class="mt-2">
                 <li>Fixes an incompatibility issue with python versions <= 3.6</li>
             </ul>
