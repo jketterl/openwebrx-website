@@ -73,7 +73,14 @@ function layout(string $menu_id, string $title, callable $content_generator) {
     <meta name="description" content="OpenWebRX web-based software defined radio receiver, remote HF spectrum monitoring with a wide variety of demodulators." />
     <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/openwebrx.css" />
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" sizes="16x16 32x32" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/gfx/favicon32.png" />
+    <link rel="icon" type="image/png" sizes="44x44" href="/gfx/favicon44.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/gfx/favicon64.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/gfx/favicon96.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="/gfx/favicon128.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
     <script src="/jquery/jquery.min.js"></script>
 </head>
 <body>
