@@ -20,6 +20,7 @@ ADD conf/lighttpd /etc/services.d/lighttpd
 
 RUN echo -e 'include "mod_fastcgi_fpm.conf"\nserver.modules += ("mod_deflate", "mod_expire", "mod_setenv")\n\
         deflate.mimetypes = ("text/plain", "text/html", "text/javascript", "text/css")\n\
+        deflate.allowed-encodings = ("brotli", "gzip", "deflate")\n\
         expire.mimetypes = ("text/" => "access plus 1 days")\n\
         setenv.add-response-header += ("Cache-Control" => "public, must-revalidate, max-age=86400", "Content-Language" => "en")\n\
         mimetype.assign += (".webp" => "image/webp")\n\
