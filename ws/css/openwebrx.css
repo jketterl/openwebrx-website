@@ -16,7 +16,6 @@ pre.block {
 }
 
 .navbar-brand img {
-    height: 40px;
     filter: drop-shadow(0 0 2.5px rgba(0, 0, 0, .9));
 }
 
