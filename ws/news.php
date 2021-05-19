@@ -15,7 +15,7 @@ layout("news", "News", function() { ?>
                 <li>Introduces a new user management system to facilitate web config authorization</li>
                 <li>Now supports the new WSJT-X modes FST4, FST4W and Q65</li>
                 <li>Added support for the new <a href="https://m17project.org/" target="_blank" rel="noopener">M17 digital voice mode</a></li>
-                <li>Added support for uploading spot to <a href="http://www.wsprnet.org/" target="_blank" rel="noopener">WSPRnet</a></li>
+                <li>Added support for uploading spots to <a href="http://www.wsprnet.org/" target="_blank" rel="noopener">WSPRnet</a></li>
                 <li>New devices: Added support for Hermes HPSDR devices (thanks to Jim Ancona) and R&S network devices using the EB200 or Ammos protocols</li>
             </ul>
         </div>
