@@ -23,7 +23,12 @@ layout("repo", "Raspberry Pi downloads", function(){
     $searchPath = isset($_GET["path"]) ? $_GET["path"] : "";
     $matched = [];
 
+    $filterDate = new DateTime("2021-05-31");
+
     foreach ($objects as $o) {
+        if ($o["LastModified"] < $filterDate) {
+            continue;
+        }
         if (substr($o["Key"], 0, strlen($searchPath)) == $searchPath) {
             $remaining = substr($o["Key"], strlen($searchPath));
             if (strlen($remaining) > 0) {
