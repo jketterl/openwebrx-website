@@ -8,8 +8,17 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 1.1.0</h2>
+            <div>Released on August 03, 2021 <span class="badge badge-success">Current Release</span></div>
+            <ul class="mt-2">
+                <li>Introduces the new "codecserver" component to decode AMBE voice data</li>
+                <li>New decoders and metadata displays for NXDN and D-Star</li>
+                <li>Most graphical elements have been replaced with SVGs for crisper images and faster load times</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 1.0.0</h2>
-            <div>Released on May 09, 2021 <span class="badge badge-success">Current Release</span></div>
+            <div>Released on May 09, 2021</div>
             <ul class="mt-2">
                 <li>Introduces the new web configuration interface and backend storage system</li>
                 <li>Introduces a new user management system to facilitate web config authorization</li>
