@@ -4,7 +4,7 @@ ADD https://github.com/just-containers/s6-overlay/releases/download/v1.21.8.0/s6
 RUN tar xzf /tmp/s6-overlay-amd64.tar.gz -C /
 ENTRYPOINT ["/init"]
 
-RUN apk add --no-cache lighttpd php7-fpm php7-mbstring php7-openssl php7-simplexml php7-json php7-intl
+RUN apk add --no-cache lighttpd php8-fpm php8-mbstring php8-openssl php8-simplexml php8-json php8-intl
 EXPOSE 80
 
 RUN wget -qO - https://github.com/twbs/bootstrap/releases/download/v4.4.1/bootstrap-4.4.1-dist.zip | unzip -d /var/www/localhost/htdocs - && \
@@ -27,7 +27,7 @@ RUN echo -e 'include "mod_fastcgi_fpm.conf"\nserver.modules += ("mod_deflate", "
         server.tag = ""\n\
         server.errorlog := ""\n'\
     >> /etc/lighttpd/lighttpd.conf && \
-    echo -e 'zlib.output_compression = On\n' > /etc/php7/conf.d/01-compression.ini && \
-    echo -e 'expose_php = Off\n' > /etc/php7/conf.d/02-disable-powered-by.ini
+    echo -e 'zlib.output_compression = On\n' > /etc/php8/conf.d/01-compression.ini && \
+    echo -e 'expose_php = Off\n' > /etc/php8/conf.d/02-disable-powered-by.ini
 
 ADD ws/ /var/www/localhost/htdocs
