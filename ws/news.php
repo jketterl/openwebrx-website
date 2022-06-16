@@ -8,8 +8,17 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 1.2.0</h2>
+            <div>Released on June 16, 2022 <span class="badge badge-success">Current Release</span></div>
+            <ul class="mt-2">
+                <li>Rework of internal demodulation pipeline structures, bringing better performance</li>
+                <li>Callsign display for M17</li>
+                <li>Display of DMR talker alias if radioid.net is not available or disabled</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 1.1.0</h2>
-            <div>Released on August 03, 2021 <span class="badge badge-success">Current Release</span></div>
+            <div>Released on August 03, 2021</div>
             <ul class="mt-2">
                 <li>Introduces the new "codecserver" component to decode AMBE voice data</li>
                 <li>New decoders and metadata displays for NXDN and D-Star</li>
