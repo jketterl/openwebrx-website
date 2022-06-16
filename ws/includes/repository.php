@@ -13,8 +13,8 @@ function repository($fullname, $dist, $codename, $experimentalComponent) { ?>
         <div class="col-12">
             <h3>OpenWebRX official releases for <?php echo $fullname; ?></h3>
             <pre class="block">
-wget -O - https://repo.openwebrx.de/debian/key.gpg.txt | apt-key add
-echo "deb https://repo.openwebrx.de/<?php echo $dist; ?>/ <?php echo $codename; ?> main" > /etc/apt/sources.list.d/openwebrx.list
+wget -O - https://repo.openwebrx.de/debian/key.gpg.txt | gpg --dearmor -o /usr/share/keyrings/openwebrx.gpg
+echo "deb [signed-by=/usr/share/keyrings/openwebrx.gpg] https://repo.openwebrx.de/<?php echo $dist; ?>/ <?php echo $codename; ?> main" > /etc/apt/sources.list.d/openwebrx.list
 apt-get update
 apt-get install openwebrx</pre>
         </div>
@@ -25,7 +25,7 @@ apt-get install openwebrx</pre>
             </div>
             <p>Please run this additionally to the commands above:</p>
             <pre class="block">
-echo "deb https://repo.openwebrx.de/<?php echo $dist; ?>/ <?php echo $experimentalComponent; ?> main" > /etc/apt/sources.list.d/openwebrx-<?php echo $experimentalComponent; ?>.list
+echo "deb [signed-by=/usr/share/keyrings/openwebrx.gpg] https://repo.openwebrx.de/<?php echo $dist; ?>/ <?php echo $experimentalComponent; ?> main" > /etc/apt/sources.list.d/openwebrx-<?php echo $experimentalComponent; ?>.list
 apt-get update
 apt-get install openwebrx</pre>
         </div>
