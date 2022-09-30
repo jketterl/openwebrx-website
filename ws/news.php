@@ -8,8 +8,15 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 1.2.1</h2>
+            <div>Released on September 30, 2022 <span class="badge badge-success">Current Release</span></div>
+            <ul class="mt-2">
+                <li>Bugfix release that restores functionality of FiFiSDR devices</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 1.2.0</h2>
-            <div>Released on June 16, 2022 <span class="badge badge-success">Current Release</span></div>
+            <div>Released on June 16, 2022</div>
             <ul class="mt-2">
                 <li>Rework of internal demodulation pipeline structures, bringing better performance</li>
                 <li>Callsign display for M17</li>
