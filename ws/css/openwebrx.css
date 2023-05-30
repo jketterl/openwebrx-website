@@ -83,10 +83,6 @@ pre.block {
   content: '';
 }
 
-.twitter-button iframe {
-    vertical-align: middle;
-}
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {

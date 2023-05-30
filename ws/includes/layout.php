@@ -128,8 +128,7 @@ function layout(string $menu_id, string $title, callable $content_generator) {
     <footer class="footer">
         <span>Built with <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a></span> |
         <span><a href="https://bootswatch.com/darkly/" target="_blank" rel="noopener">Darkly theme by Thomas Park</a></span> |
-        <span><a class="footer-item" href="/impressum.php">Impressum</a></span> |
-        <span class="twitter-button"><a href="https://twitter.com/dd5jfk?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @dd5jfk</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
+        <span><a class="footer-item" href="/impressum.php">Impressum</a></span>
     </footer>
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
