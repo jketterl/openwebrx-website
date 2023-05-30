@@ -1,2 +1,2 @@
 #!/usr/bin/execlineb -P
-/usr/sbin/php-fpm8 -F
+/usr/sbin/php-fpm82 -F
