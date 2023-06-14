@@ -1,2 +1,2 @@
-#!/usr/bin/execlineb -P
+#!/command/with-contenv sh
 /usr/sbin/php-fpm82 -F

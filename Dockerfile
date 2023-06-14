@@ -1,7 +1,9 @@
 FROM alpine:latest
 
-ADD https://github.com/just-containers/s6-overlay/releases/download/v1.21.8.0/s6-overlay-amd64.tar.gz /tmp/
-RUN tar xzf /tmp/s6-overlay-amd64.tar.gz -C /
+ADD https://github.com/just-containers/s6-overlay/releases/download/v3.1.5.0/s6-overlay-noarch.tar.xz /tmp
+RUN tar -Jxpf /tmp/s6-overlay-noarch.tar.xz -C /
+ADD https://github.com/just-containers/s6-overlay/releases/download/v3.1.5.0/s6-overlay-x86_64.tar.xz /tmp
+RUN tar -Jxpf /tmp/s6-overlay-x86_64.tar.xz -C /
 ENTRYPOINT ["/init"]
 
 RUN apk add --no-cache lighttpd php82-fpm php82-mbstring php82-openssl php82-simplexml php82-json php82-intl
@@ -28,6 +30,7 @@ RUN echo -e 'include "mod_fastcgi_fpm.conf"\nserver.modules += ("mod_deflate", "
         server.errorlog := ""\n'\
     >> /etc/lighttpd/lighttpd.conf && \
     echo -e 'zlib.output_compression = On\n' > /etc/php82/conf.d/01-compression.ini && \
-    echo -e 'expose_php = Off\n' > /etc/php82/conf.d/02-disable-powered-by.ini
+    echo -e 'expose_php = Off\n' > /etc/php82/conf.d/02-disable-powered-by.ini && \
+    echo -e 'clear_env = no\n' >> /etc/php82/php-fpm.d/www.conf
 
 ADD ws/ /var/www/localhost/htdocs

@@ -9,8 +9,7 @@ layout("repo", "Raspberry Pi downloads", function(){
 
     $s3 = new Aws\S3\S3Client([
         "region" => "eu-central-1",
-        "version" => "latest",
-        "credentials" => false
+        "version" => "latest"
     ]);
 
     $result = $s3->listObjects([
