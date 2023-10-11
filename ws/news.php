@@ -8,8 +8,16 @@ layout("news", "News", function() { ?>
             <div>This page lists the latest releases of OpenWebRX including a summary of the most significant changes.</div>
         </div>
         <div class="col-12 mt-5">
+            <h2>OpenWebRX 1.2.2</h2>
+            <div>Released on October 11, 2023 <span class="badge badge-success">Current Release</span> <span class="badge badge-danger">Security Hotfix</span></div>
+            <ul class="mt-2">
+                <li>Fixes an over-the-air code injection vulnerability</li>
+                <li>Fixes two file descriptor leaks to address "too many open files" errors</li>
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
             <h2>OpenWebRX 1.2.1</h2>
-            <div>Released on September 30, 2022 <span class="badge badge-success">Current Release</span></div>
+            <div>Released on September 30, 2022</div>
             <ul class="mt-2">
                 <li>Bugfix release that restores functionality of FiFiSDR devices</li>
             </ul>
