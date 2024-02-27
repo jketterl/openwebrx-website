@@ -74,7 +74,7 @@ layout("repo", "Raspberry Pi downloads", function(){
                         <?php foreach($paths as $p) { ?>
                             <tr>
                                 <td colspan="2">
-                                    <a href="?path=<?php echo $p; ?>/">
+                                    <a href="?path=<?php echo $searchPath . $p; ?>/">
                                         <?php echo $p; ?>/
                                     </a>
                                 </td>
