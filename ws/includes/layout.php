@@ -7,6 +7,11 @@ $menu = [
         "href" => "/"
     ],
     [
+        "id" => "about",
+        "text" => "About",
+        "href" => "/about.php"
+    ],
+    [
         "id" => "news",
         "text" => "News",
         "href" => "/news.php"
