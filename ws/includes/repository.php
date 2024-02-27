@@ -39,7 +39,7 @@ function repository($dist, $repo, $stableVersion, $experimentalVersion, $experim
                         All commands must be run as root. If you're using sudo, please use <pre style="display:inline;">sudo su -</pre> before executing the commands below.
                     </div>
                     <pre class="block">
-wget -O - https://repo.openwebrx.de/debian/key.gpg.txt | gpg --dearmor -o /usr/share/keyrings/openwebrx.gpg
+wget -O /usr/share/keyrings/openwebrx.gpg https://repo.openwebrx.de/openwebrx.gpg
 echo "deb [signed-by=/usr/share/keyrings/openwebrx.gpg] https://repo.openwebrx.de/<?php echo $dist; ?>/ <?php echo $selected["codename"]; ?> main" > /etc/apt/sources.list.d/openwebrx.list
 apt-get update
 apt-get install openwebrx</pre>
@@ -64,7 +64,7 @@ apt-get install openwebrx</pre>
                         The experimental repository is not recommended for general use, and should only be included for development and testing. Experimental packages may be broken, unstable or in the worst case even harmful.
                     </div>
                     <pre class="block">
-wget -O - https://repo.openwebrx.de/debian/key.gpg.txt | gpg --dearmor -o /usr/share/keyrings/openwebrx.gpg
+wget -O /usr/share/keyrings/openwebrx.gpg https://repo.openwebrx.de/openwebrx.gpg
 echo "deb [signed-by=/usr/share/keyrings/openwebrx.gpg] https://repo.openwebrx.de/<?php echo $dist; ?>/ <?php echo $experimentalComponent; ?> main" > /etc/apt/sources.list.d/openwebrx-<?php echo $experimentalComponent; ?>.list
 apt-get update
 apt-get install openwebrx</pre>
