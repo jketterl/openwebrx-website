@@ -55,7 +55,7 @@ layout("about", "About OpenWebRX", function(){ ?>
                         in a way that allows the operator to fully disable them.
                     </div>
                     <div>
-                        The aim of the project is to treat all users as fair as possible. As such, any features that
+                        The aim of the project is to treat all users as fairly as possible. As such, any features that
                         give elevated privileges to selected groups of users have no place in this project. Exceptions
                         to this rule will only be given to operators, and only for functionality needed to fulfill
                         the operator role.
